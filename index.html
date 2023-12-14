@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>@rainiefch-71230982-PersonalWebPage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Web Page</h1>
+    </header>
+    <h2>About Me</h2>
+    <section id="foto">
+            <img src="20231130_184256.jpg" width="250px", height=auto>
+    </section>
+
+    <section id="tentang-saya">
+        <h4>Rainie fanita Chrisabel Hadisantoso</h4>
+        <ul>
+            <li><h3>@rainiefch</h3></li>
+            <li><h3>Yogtakarta, DIY, Indonesia</h3></li>
+        </ul>
+    </section>
+    
+    <section id="keterampilan">
+        <p><h3>Skillset</h3></p>
+            <ol>
+                <li>C</li>
+                <li>Python</li>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ol>
+    </section>
+    
+    <button id="tombolGantiWarna">Tombol ganti warna</button>
+
+    <footer>
+        <p>Thank you for visiting my page</p>
+    </footer>
+    
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRasndom() {
+            const warnaList = ['red', 'blue', 'green','yellow','white'];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById("tombolGantiWarna");
+        tombolGantiWarna.addEventListener('click',gantiWarnaRasndom);
+        
+    </script>
+</body>
+</html>
