@@ -6,24 +6,27 @@
     <title>@rainiefch-71230982-PersonalWebPage</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+    <div class="wrapper">
+    <header class="header">
         <h1>Welcome to My Personal Web Page</h1>
     </header>
-    <h2>About Me</h2>
+    
+    <aside class="sidebar">
     <section id="foto">
             <img src="20231130_184256.jpg" width="250px", height=auto>
     </section>
+    </aside>
 
-    <section id="tentang-saya">
+    <article class="content">
+        <h2>About Me</h2>
         <h4>Rainie Fanita Chrisabel Hadisantoso</h4>
         <ul>
             <li><h3>@rainiefch</h3></li>
             <li><h3>Yogyakarta, DIY, Indonesia</h3></li>
         </ul>
-    </section>
-    
-    <section id="keterampilan">
+
         <p><h3>Skillset</h3></p>
             <ol>
                 <li>C</li>
@@ -32,14 +35,18 @@
                 <li>CSS</li>
                 <li>Javascript</li>
             </ol>
-    </section>
+    </article>
     
-    <button id="tombolGantiWarna">Tombol ganti warna</button>
+    
+    <button id="tombolGantiWarna">
+        Tombol ganti warna
+    </button>
 
-    <footer>
+    <footer class="footer">
         <p>Thank you for visiting my page</p>
     </footer>
-    
+
+    </div>
     <script>
         const bodyElement = document.body;
 
